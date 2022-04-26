@@ -1,6 +1,8 @@
 const navButton = document.querySelector('.nav-button');
 const navOpen = document.querySelector('.nav-open');
 
+document.querySelector('.cover-date').innerHTML= new Date().toLocaleDateString();
+
 const tl = gsap.timeline({default: {duration: 0.75, ease: "power1.out"},reversed: true})
 tl.to('.cover',{duration:1,ease:'power2.easeOut',width:'60%'})
 tl.to('nav',{duration:1,ease:'power2.easeOut',height: '100%'},'-=0.5')
